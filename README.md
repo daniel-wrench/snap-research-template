@@ -1,13 +1,41 @@
-# re-simple-python-project
+# Repository Template for Reproducible Research
 
-This simple project structure template repository is adapted from the [Good Enough Project](https://github.com/bvreede/good-enough-project) Cookiecutter template by Barbara Vreede (2019).
+This simple project structure template repository is adapted from [https://github.com/UtrechtUniversity/simple-python-template]. **Click "Use this template"** at the top of this page to create a new repository with the same folder structure, and then add your own files and edit this README for your particular project.
+
 If you plan to develop a package, check the [template repository for a Python package](https://github.com/UtrechtUniversity/re-python-package).
 
-## Usage
+## How to run this code 
 
-Click "Use this template" at the top of this page to create a new repository with the same folder structure.
+#### Clone this repository
+
+```sh
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+```
+
+#### Change directory to this folder
+
+```sh
+cd YOUR-REPO-NAME
+```
+
+#### Set up virtual environment
+- Create a virtual environment: `python -m venv env`
+- Activate the environment:
+    - Windows: `.\env\Scripts\activate`
+    - Unix/macOS: `source env/bin/activate`
+- Install required packages: `pip install -r requirements.txt`
+    - If you haven't yet set up this file, you can first install the required packages, then use `pip freeze > requirements.txt` to write all the dependencies (and their versions) to this file. *Note that this can be a bit overkill with the number of dependencies listed: see [here](https://calmcode.io/course/pip-tools/compile) for an improved method.*
+
+#### Execute code
+*For example: change these based on your specific files, and add detail about what each step involves*
+```
+python scripts/01_get_data.py
+python scripts/02_clean_data.py
+python scripts/03_analysis.py
+```
 
 ## Project Structure
+*Recommended: change based on your specific files*
 
 The project structure distinguishes three kinds of folders:
 - read-only (RO): not edited by either code or researcher
@@ -20,7 +48,7 @@ The project structure distinguishes three kinds of folders:
 ├── .gitignore
 ├── LICENSE
 ├── README.md
-├── requirements.txt
+├── requirements.txt   <- Package requirements needed to execute the code in `scripts/`
 ├── data               <- All project data, ignored by git
 │   ├── processed      <- The final, canonical data sets for modeling. (PG)
 │   ├── raw            <- The original, immutable data dump. (RO)
