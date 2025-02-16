@@ -39,29 +39,24 @@ python scripts/03_analysis.py
 ## Project Structure
 *Recommended: change based on your specific files. For example, you may also want a `models/` or `notebooks/` folder.*
 
-The project structure distinguishes three kinds of folders:
-- read-only (RO): not edited by either code or researcher
-- human-writeable (HW): edited by the researcher only.
-- project-generated (PG): folders generated when running the code; these folders can be deleted or emptied and will be completely reconstituted as the project is run.
-
-
 ```
 .
-├── .gitignore
-├── LICENSE
-├── README.md
-├── requirements.txt   <- Package requirements needed to execute the code in `scripts/`
-├── data               <- All project data, ignored by git
-│   ├── processed      <- The final, canonical data sets for modeling. (PG)
-│   ├── raw            <- The original, immutable data dump. (RO)
-│   └── temp           <- Intermediate data that has been transformed. (PG)
-├── doc                <- Documentation notebook for users (HW)
-│   ├── manuscript     <- Manuscript source, e.g., LaTeX, Markdown, etc. (HW)
-│   └── reports        <- Other project reports and notebooks (e.g. Jupyter, .Rmd) (HW)
-├── results
-│   ├── figures        <- Figures for the manuscript or reports (PG)
-│   └── output         <- Other output for the manuscript or reports (PG)
-└── src                <- Source code for this project (HW)
+├── README.md          <- Overview of the project, how to install and use 
+├── LICENSE            <- License for open-source projects
+│── CITATION.cff       <- Citation file for academic use
+├── .gitignore         <- Files to ignore (e.g., __pycache__, logs, data)
+├── requirements.txt   <- Dependencies (if using pip)
+├── data               <- Data directory (typically ignored in version control)
+│   ├── raw/           <- Raw input data (DO NOT MODIFY!)
+│   └── processed/     <- Processed datasets
+├── outputs            <- Outputs like figures, tables, reports
+│   └── figs           <- Plots and figures
+├── src                <- Source code for the project
+│   ├── utils.py       <- Functions used by multiple scripts
+└── scripts            <- Python/R/etc. scripts for for processing and analysing data
+    ├── 01_get_data.py
+    ├── 02_clean_data.py
+    └── 03_analysis.py
 
 ```
 
