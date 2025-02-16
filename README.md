@@ -4,6 +4,8 @@ This simple project structure template repository is adapted from [https://githu
 
 If you plan to develop a package, check the [template repository for a Python package](https://github.com/UtrechtUniversity/re-python-package).
 
+See [here](https://github.com/DenisMot/Python-minimal-install) for a useful guide to installing a minimal Python environment and setting up in VS Code and conda.
+
 ## How to run this code 
 
 #### Clone this repository
@@ -35,7 +37,7 @@ python scripts/03_analysis.py
 ```
 
 ## Project Structure
-*Recommended: change based on your specific files*
+*Recommended: change based on your specific files. For example, you may also want a `models/` or `notebooks/` folder.*
 
 The project structure distinguishes three kinds of folders:
 - read-only (RO): not edited by either code or researcher
@@ -53,7 +55,7 @@ The project structure distinguishes three kinds of folders:
 │   ├── processed      <- The final, canonical data sets for modeling. (PG)
 │   ├── raw            <- The original, immutable data dump. (RO)
 │   └── temp           <- Intermediate data that has been transformed. (PG)
-├── docs               <- Documentation notebook for users (HW)
+├── doc                <- Documentation notebook for users (HW)
 │   ├── manuscript     <- Manuscript source, e.g., LaTeX, Markdown, etc. (HW)
 │   └── reports        <- Other project reports and notebooks (e.g. Jupyter, .Rmd) (HW)
 ├── results
