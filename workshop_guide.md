@@ -8,13 +8,11 @@ Setting up and installing virtual environment: see here for improvement on pip f
 See here for general principles: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510 
 
 ## TO-DO
--   Create git repo with this file, called `snap-research-template`. Confirm can view this file on GitHub
--   As with quick version I made, have the appropriate folders (maybe re-fork?)
 -   Referring to notebook, lay out our plan of attack. Some things will be already provided (requirements.txt, initialised git repo), but we will also describe how these are created if you are **starting from scratch**.
 -   Refer to Git carpentry to confirm that content
 -   Let Alexa know about workshop
 
-## Introduction
+## PART 1: Motivation
 
 ### What is reproducible research?
 
@@ -28,7 +26,9 @@ See here for general principles: https://journals.plos.org/ploscompbiol/article?
     -   Testing, `__init__.py` files, and other aspects of creating a piece of "software" (i.e. R/Python library/package)
 -   Instead, we are focusing on creating a reproducible **data pipeline**, as one would encounter in a scientific analysis and would typically (but not necessarily) be limited to step-by-step, functional-style programming. 
 
-## Prerequisites
+### Summary of workshop
+
+### Prerequisites
 
 Participants should have installed:
 
@@ -44,27 +44,47 @@ Participants should have installed:
 
 -   An active GitHub account
 
-## Version Control with Git and GitHub
+## PART 2: Structuring a research repository
+
+See GitHub template: https://github.com/daniel-wrench/snap-research-template and the README of that repo
+
+## PART 3: Version Control with Git and GitHub
 
 ### Why Use Git?
 
 -   Tracks changes, enables collaboration.
 -   Local vs. remote repositories.
+-   Can do everything in terminal, but IDE often offers more intuitive and visual GUI for the most common tasks. For example, highly recommend looking at your diffs before committing!
 
-### Hands-on: Initializing a Git Repository
+
+We will
+1. Clone my repo **as template, giving your own name**. Note structure and mention initialising locally
+3. Download some data - can we commit it? *Importance of describing or having script about how to access*
+4. Plot that data from scripts/
+5. Run from the terminal
+6. Commit
+7. Push
+7. Make a change
+8. Commit
+9. Undo that change
+10. Set-up virtual environment
+11. Talk about benefit of this set-up when working on HPC, demo with my code. (push and pulling)
+
+### Hands-on: Cloning a Git Repository
 
 ``` bash
-git init
+(git init)
 git status
 git add .
 git commit -m "First commit"
 .gitignore (e.g., ignore __pycache__/, .venv/, data/)
 ```
 
+(If we are instead starting locally, we cd to our code repo, then `git init`, and if we want to put on GitHub, `git remote add origin <repo-url>`)
+
 ### Pushing to GitHub
 
 ``` bash
-git remote add origin <repo-url>
 git push -u origin main
 ```
 
@@ -95,24 +115,6 @@ pip install pandas numpy matplotlib
 pip freeze > requirements.txt
 
 pip install -r requirements.txt
-```
-
-## Structuring a Research Repository
-
-### Recommended folder structure:
-
-```         
-project-name
-├── data/          # Raw & processed data (ignored in Git)
-├── scripts/       # Python or R scripts
-├── notebooks/     # Jupyter notebooks
-├── results/       # Figures, tables, outputs
-├── doc/           # Documents, manuscript, reports
-├── README.md      # Project overview
-├── requirements.txt  # Dependencies
-├── .gitignore     # Ignoring unnecessary files
-├── LICENSE        # Licensing (MIT, GPL, etc.)
-├── environment.yml  # Conda environment file (if used)
 ```
 
 ## GitHub Co-Pilot
