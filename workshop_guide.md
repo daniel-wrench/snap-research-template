@@ -1,4 +1,7 @@
 # Introduction to Reproducible Research
+
+![image](https://github.com/user-attachments/assets/709ccc4b-8031-4603-a207-2d599901b3e2)
+
 ### SNAP workshop, February 20th 2025
 
 ## TO-DO
