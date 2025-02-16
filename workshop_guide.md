@@ -1,14 +1,8 @@
 # Introduction to Reproducible Research
 ### SNAP workshop, February 20th 2025
 
-Have cloned GitHub that has much of this.
-Could get students to clone this too, and then go through steps of adding a simple script, committing, tracking changes, undoing.
-Setting up and installing virtual environment: see here for improvement on pip freeze https://calmcode.io/course/pip-tools/compile 
-
-See here for general principles: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510 
-
 ## TO-DO
--   Referring to notebook, lay out our plan of attack. Some things will be already provided (requirements.txt, initialised git repo), but we will also describe how these are created if you are **starting from scratch**.
+-   Tidy this plan of attack
 -   Refer to Git carpentry to confirm that content
 -   Let Alexa know about workshop
 
@@ -16,17 +10,40 @@ See here for general principles: https://journals.plos.org/ploscompbiol/article?
 
 ### What is reproducible research?
 
+See here for general principles: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510 
+
 -   A.K.A. open science, sustainable software
 -   Ensures collaboration, longevity, and transparency.
 -   Key pillars: version control, environments, structure.
 -   Demo: A messy vs. well-structured research project.
 -   What won't we be covering?
     -   Containers
+    -   Pull requests and other intermediate/advanced aspects of Git
     -   Object-oriented programming
     -   Testing, `__init__.py` files, and other aspects of creating a piece of "software" (i.e. R/Python library/package)
--   Instead, we are focusing on creating a reproducible **data pipeline**, as one would encounter in a scientific analysis and would typically (but not necessarily) be limited to step-by-step, functional-style programming. 
+-   Instead, **we are focusing on creating a reproducible data pipeline**, as one would encounter in a scientific analysis and would typically (but not necessarily) be limited to step-by-step, functional-style programming. 
 
 ### Summary of workshop
+
+We will cover 
+- downloading a repository from GitHub
+- a good code repository structure
+- using version control with Git
+- using virtual environments
+
+We will
+1. Clone my repo **as template, giving your own name**. Note structure and mention initialising locally
+3. Download some data - can we commit it? *Importance of describing or having script about how to access*
+4. Plot that data from scripts/
+5. Run from the terminal
+6. Commit
+7. Push
+7. Make a change
+8. Commit
+9. Undo that change
+10. Set-up virtual environment
+11. Talk about benefit of this set-up when working on HPC, demo with my code. (push and pulling)
+
 
 ### Prerequisites
 
@@ -55,20 +72,6 @@ See GitHub template: https://github.com/daniel-wrench/snap-research-template and
 -   Tracks changes, enables collaboration.
 -   Local vs. remote repositories.
 -   Can do everything in terminal, but IDE often offers more intuitive and visual GUI for the most common tasks. For example, highly recommend looking at your diffs before committing!
-
-
-We will
-1. Clone my repo **as template, giving your own name**. Note structure and mention initialising locally
-3. Download some data - can we commit it? *Importance of describing or having script about how to access*
-4. Plot that data from scripts/
-5. Run from the terminal
-6. Commit
-7. Push
-7. Make a change
-8. Commit
-9. Undo that change
-10. Set-up virtual environment
-11. Talk about benefit of this set-up when working on HPC, demo with my code. (push and pulling)
 
 ### Hands-on: Cloning a Git Repository
 
