@@ -37,7 +37,7 @@ python scripts/03_analysis.py
 ```
 
 ## Project Structure
-*Recommended: change based on your specific files. For example, you may also want a `models/` or `notebooks/` folder.*
+*Recommended: change based on your specific files. For example, you may also want a `models/` or `notebooks/` folder. (If you are inside `notebooks/` you will likely want to put `sys.path.append(os.path.abspath(".."))` at the start of your notebook, so that you can import funcs from `scripts/`*
 
 ```
 .
@@ -51,9 +51,8 @@ python scripts/03_analysis.py
 │   └── processed/     <- Processed datasets
 ├── outputs            <- Outputs like figures, tables, reports
 │   └── figs           <- Plots and figures
-├── src                <- Source code for the project
-│   ├── utils.py       <- Functions used by multiple scripts
-└── scripts            <- Python/R/etc. scripts for for processing and analysing data
+└── scripts            <- Your codes
+    ├── utils.py       <- Functions used by multiple scripts
     ├── 01_get_data.py
     ├── 02_clean_data.py
     └── 03_analysis.py
