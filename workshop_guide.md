@@ -2,9 +2,63 @@
 ### SNAP workshop, February 20th 2025
 
 ## TO-DO
--   Tidy this plan of attack
+-   Tidy this plan of attack: start with "we will" list, then fill out the content below in more detail. **Highlight questions along the way:**
+    - What do you think reproducible research means?
+    - What would be in a well-structured repo?
+    - Is version control only important when working in a team? (No. So you can go back and fix your own mistakes. Also, **when working in multiple environments (give demo)**)
+    - See [ChatGPT](https://chatgpt.com/share/67b29f0c-d0f8-8012-bceb-633f32dae893) for notes on this
 -   Refer to Git carpentry to confirm that content
 -   Let Alexa know about workshop
+
+
+### Prerequisites
+
+Participants should have installed:
+
+-   VS Code (with Python and Git extensions)
+
+-   Git (configured: check with `git config --list` )
+
+    -   `git config --global user.name "Your Name"`
+
+    -   `git config --global user.email "you@example.com"`
+
+-   Python (latest stable version, e.g., 3.10+)
+
+-   An active GitHub account
+
+
+### Summary of workshop
+
+We will cover 
+- downloading a repository from GitHub
+- a good code repository structure
+- using version control with Git
+- using virtual environments
+
+#### Task list
+
+1. *What does reproducible research mean to you? 3 elements we will be covering today*
+1. Get repo and discuss good structure
+    1. Got to GitHub.com and check out my template. *Note structure!* 
+    2. Create a template from my repo, **giving your own name**. 
+    3. Clone this to your computer. *Mention initialising locally.*
+2. Run some scripts and think about comittting or not
+    3. Download some data (run from terminal)
+    4. Can we commit it? *Importance of describing or having script about how to access*
+    4. Plot that data in scripts/
+    6. Commit
+7. Push
+7. Make a change
+8. Commit
+9. Undo that change
+10. Set-up virtual environment
+11. Talk about benefit of this set-up when working on HPC, demo with my code. (push and pulling)
+
+#### Extra
+
+1. Try getting your own codes into a nice tidy reproducible state! Put into structure as discussed, git init, upload to github.
+2. Any other
 
 ## PART 1: Motivation
 
@@ -23,43 +77,8 @@ See here for general principles: https://journals.plos.org/ploscompbiol/article?
     -   Testing, `__init__.py` files, and other aspects of creating a piece of "software" (i.e. R/Python library/package)
 -   Instead, **we are focusing on creating a reproducible data pipeline**, as one would encounter in a scientific analysis and would typically (but not necessarily) be limited to step-by-step, functional-style programming. 
 
-### Summary of workshop
-
-We will cover 
-- downloading a repository from GitHub
-- a good code repository structure
-- using version control with Git
-- using virtual environments
-
-We will
-1. Clone my repo **as template, giving your own name**. Note structure and mention initialising locally
-3. Download some data - can we commit it? *Importance of describing or having script about how to access*
-4. Plot that data from scripts/
-5. Run from the terminal
-6. Commit
-7. Push
-7. Make a change
-8. Commit
-9. Undo that change
-10. Set-up virtual environment
-11. Talk about benefit of this set-up when working on HPC, demo with my code. (push and pulling)
 
 
-### Prerequisites
-
-Participants should have installed:
-
--   VS Code (with Python and Git extensions)
-
--   Git (configured: check with `git config --list` )
-
-    -   `git config --global user.name "Your Name"`
-
-    -   `git config --global user.email "you@example.com"`
-
--   Python (latest stable version, e.g., 3.10+)
-
--   An active GitHub account
 
 ## PART 2: Structuring a research repository
 
