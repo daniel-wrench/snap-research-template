@@ -1,14 +1,16 @@
 # Repository Template for Reproducible Research
 
-This simple project structure template repository is adapted from https://github.com/UtrechtUniversity/simple-python-template. **Click "Use this template"** at the top of this page to create a new repository with the same folder structure, and then add your own files and edit this README for your particular project.
+**Click "Use this template"** at the top of the webpage on GitHub to create a new repository with the same folder structure. You can then add your own files and edit this README for your particular project.
 
-If you plan to develop a package, check the [template repository for a Python package](https://github.com/UtrechtUniversity/re-python-package).
-
-See [here](https://github.com/DenisMot/Python-minimal-install) for a useful guide to installing a minimal Python environment and setting up in VS Code and conda.
+- This simple project structure template repository is adapted from https://github.com/UtrechtUniversity/simple-python-template. 
+- You can find a guide to getting set up with Git, and slides from a workshop on reproducible research, in the `doc/` folder.
+- See [here](https://github.com/DenisMot/Python-minimal-install) for a useful guide to installing a minimal Python environment and setting up in VS Code and conda.
+- For more detail on Git, see [this great free tutorial](https://swcarpentry.github.io/git-novice/): 
+- If you plan to develop a package, check out the [template repository for a Python package](https://github.com/UtrechtUniversity/re-python-package).
 
 ## How to run this code 
 
-*Update for your specific project paths etc.*
+*Update for your specific project*
 
 ### You will need
 
