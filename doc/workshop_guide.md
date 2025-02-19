@@ -50,15 +50,25 @@ What won't we be covering?
 1. *What does reproducible research mean to you?* 
 2. *Is version control only important when working in a team?*
 2. *3 elements we will be covering today*
+1. 2 ways you might get going with a version controlled repo. Either start from an existing folder of codes and `git init`. 
+Or, start from scratch. Nice thing about this is you can do it from GitHub and use a template, and then move in any files you might already have.
+We'll be doing this, to show you a good project structure. But later on if you want to version control your existing codes, we can go through that in more detail.
 1. Get repo and discuss good structure
-    1. Got to GitHub.com and check out my template. *Note structure!* 
+    1. Got to https://github.com/daniel-wrench/snap-research-template and check out my template.
     2. Create a template from my repo, **giving your own name**. 
-    3. Clone this to your computer. *Mention initialising locally.*
+    3. Clone this to your computer and cd to this directory from terminal.
+    4. What do you notice about the structure? See README for details
 2. Run some scripts and think about comittting or not
-    3. Download some data (run from terminal)
-    4. Can we commit it? *Importance of describing or having script about how to access*
-    4. Plot that data in scripts/
-    6. Commit
+    3. Have a look at 01_download_data.
+    4. Run from terminal
+    4. Should we commit it? *Importance of describing or having script about how to access*
+    5. Delete
+    6. Change save path to `data/raw/`
+    7. Run again
+    8. Can we commit the data? Why not?
+    9. Commit change to 1_download
+    4. Make a plot of this data. Up to you how to do it: doesn't need to be anything fancy. Think about where the code should go, a good name for it, etc.
+    6. Commit this file.
 7. Push
 7. Make a change
 8. Commit

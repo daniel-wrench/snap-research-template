@@ -22,8 +22,9 @@ def download_weather_data():
         )
 
         # Save to CSV
-        df.to_csv("welly_weather_forecast.csv", index=False)
-        print("Data successfully downloaded and saved to 'welly_weather_forecast.csv'")
+        output_path = "welly_weather_forecast.csv"
+        df.to_csv(output_path, index=False)
+        print(f"Data successfully downloaded and saved to '{output_path}'")
         print("\nFirst few rows of data:")
         print(df.head())
 
