@@ -6,12 +6,10 @@
 For questions or feedback, contact Daniel Wrench: daniel.wrench@vuw.ac.nz
 
 ## TO-DO
--   Tidy the task list, **highlighting questions/discussion points along the way:**
-    - See [ChatGPT](https://chatgpt.com/share/67b29f0c-d0f8-8012-bceb-633f32dae893) for notes on this
--   Go through content below
--   Turn into slides for high-level bullet points, tasks
--   Refer to Git carpentry to confirm that content
-
+- Go thru my slides interactively
+- Clean/delete below (cf preview with slides)
+- Quick look at Git carpentry thing
+- Commit, push
 
 ### Prerequisites
 

@@ -18,6 +18,8 @@ See [here](https://github.com/DenisMot/Python-minimal-install) for a useful guid
 
     -   `git config --global user.email "you@example.com"`
 
+    -   For complete instructions, see `doc/git_setup_guide.md`
+
 -   Python (latest stable version, e.g., 3.10+)
 
 -   An active GitHub account
@@ -39,7 +41,7 @@ cd YOUR-REPO-NAME
 ### Set up virtual environment
 1. Create a virtual environment: `python -m venv venv`
 2. Activate the environment:
-    - Windows: `.\venv\Scripts\activate`
+    - Windows: `source venv/Scripts/activate`
     - Linux/macOS: `source venv/bin/activate` 
 3. Install required packages: `pip install -r requirements.txt`
     - If you haven't yet set up this file, you can first install the required packages, then use `pip freeze > requirements.txt` to write all the dependencies (and their versions) to this file. *Note that this can be a bit overkill with the number of dependencies listed: see [here](https://calmcode.io/course/pip-tools/compile) for an improved method.*
