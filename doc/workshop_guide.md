@@ -3,7 +3,7 @@
 <img src="https://github.com/user-attachments/assets/709ccc4b-8031-4603-a207-2d599901b3e2" width="320">
 
 ### SNAP workshop, February 20th 2025
-For questions or feedback contact Daniel Wrench: daniel.wrench@vuw.ac.nz
+For questions or feedback, contact Daniel Wrench: daniel.wrench@vuw.ac.nz
 
 ## TO-DO
 -   Tidy the task list, **highlighting questions/discussion points along the way:**

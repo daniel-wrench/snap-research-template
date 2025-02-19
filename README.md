@@ -10,27 +10,41 @@ See [here](https://github.com/DenisMot/Python-minimal-install) for a useful guid
 
 *Update for your specific project paths etc.*
 
-#### Clone this repository 
+### You will need
+
+-   Git (configured: check with `git config --list` )
+
+    -   `git config --global user.name "Your Name"`
+
+    -   `git config --global user.email "you@example.com"`
+
+-   Python (latest stable version, e.g., 3.10+)
+
+-   An active GitHub account
+
+-   A terminal or IDE of your choice (VS Code recommended)
+
+### Clone this repository 
 
 ```sh
 git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
 ```
 
-#### Change directory to this folder
+### Change directory to this folder
 
 ```sh
 cd YOUR-REPO-NAME
 ```
 
-#### Set up virtual environment
-1. Create a virtual environment: `python -m venv env`
+### Set up virtual environment
+1. Create a virtual environment: `python -m venv venv`
 2. Activate the environment:
-    - Windows: `.\env\Scripts\activate`
-    - Unix/macOS: `source env/bin/activate` 
+    - Windows: `.\venv\Scripts\activate`
+    - Linux/macOS: `source venv/bin/activate` 
 3. Install required packages: `pip install -r requirements.txt`
     - If you haven't yet set up this file, you can first install the required packages, then use `pip freeze > requirements.txt` to write all the dependencies (and their versions) to this file. *Note that this can be a bit overkill with the number of dependencies listed: see [here](https://calmcode.io/course/pip-tools/compile) for an improved method.*
 
-#### Execute code
+### Execute code
 *For example: change these based on your specific files, and add detail about what each step involves*
 ```
 python scripts/01_get_data.py
@@ -65,8 +79,11 @@ python scripts/03_analysis.py
 
 ```
 
-## Add a citation file
-Create a citation file for your repository using [cffinit](https://citation-file-format.github.io/cff-initializer-javascript/#/)
+## Share your software
+
+1. Link Zenodo to your GitHub account
+2. Use Zenodo to create a DOI for the current version of this repo
+2. Use this DOI when creating a citation file for your repository using [cffinit](https://citation-file-format.github.io/cff-initializer-javascript/#/)
 
 ## License
 
