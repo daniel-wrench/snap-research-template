@@ -47,6 +47,7 @@ What won't we be covering?
 
 #### Task list
 
+1. *Who's been to a SNAP event before?* What is SNAP? 
 1. *What does reproducible research mean to you?* 
 2. *Is version control only important when working in a team?*
 2. *3 elements we will be covering today*
@@ -54,10 +55,12 @@ What won't we be covering?
 Or, start from scratch. Nice thing about this is you can do it from GitHub and use a template, and then move in any files you might already have.
 We'll be doing this, to show you a good project structure. But later on if you want to version control your existing codes, we can go through that in more detail.
 1. Get repo and discuss good structure
-    1. Got to https://github.com/daniel-wrench/snap-research-template and check out my template.
+    1. Got to https://github.com/daniel-wrench/snap-research-template and check out my template. *Fork vs. clone*. Here something different: ignore git history
     2. Create a template from my repo, **giving your own name**. 
     3. Clone this to your computer and cd to this directory from terminal.
     4. What do you notice about the structure? See README for details
+2. Follow instructions under *How to run this code*
+3. When you get to "set up virtual environment, after activating, install `pandas`, `requests`, `
 2. Run some scripts and think about comittting or not
     3. Have a look at 01_download_data.
     4. Run from terminal
@@ -65,16 +68,31 @@ We'll be doing this, to show you a good project structure. But later on if you w
     5. Delete
     6. Change save path to `data/raw/`
     7. Run again
-    8. Can we commit the data? Why not?
+    8. git status
+    8. Can we commit the data? Why not? What if I only wanted to ignore the raw data, not the processed data?
     9. Commit change to 1_download
+        9. `git diff 01_download_data.py`
+        10. `git add 01_download_data.py`
+        11. `git commit -m "message"` Messages should be informative but concise. May be multiple files involved, but all should relate to the same change. (e.g., changed the name of a key variable across multiple scripts)
+        12. `git push`
+    10. Undo
+        1. `git revert HEAD` (can also use this to revert to a specific commit in history)
+        2. (use `git revert --quit` if get persistent `REVERTING` branch flag)
     4. Make a plot of this data. Up to you how to do it: doesn't need to be anything fancy. Think about where the code should go, a good name for it, etc.
     6. Commit this file.
-7. Push
-7. Make a change
-8. Commit
-9. Undo that change
+    7. Make some silly mistake
+    8. `git status`
+    9. `git restore ...`
+    10. `git status`
 10. Set-up virtual environment
-11. Talk about benefit of this set-up when working on HPC, demo with my code. (push and pulling)
+    2. *Motivate*
+    1. See README for instructions
+    2. `git status`
+    2. Put into `.gitignore`
+11. *Who uses Rāpoi? Nesi?* Demo of commiting file locally, popping up on NESI (demoing `git pull`)
+12. Branches: for bigger projects
+    - multiple people working simultaneously
+    - one "main/master" branch that you only be pushed to once changes have been checked: "pull request" = request to pull changes from "feature" branch to main branch
 
 #### Extra
 

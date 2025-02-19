@@ -1,6 +1,6 @@
 # Repository Template for Reproducible Research
 
-This simple project structure template repository is adapted from [https://github.com/UtrechtUniversity/simple-python-template]. **Click "Use this template"** at the top of this page to create a new repository with the same folder structure, and then add your own files and edit this README for your particular project.
+This simple project structure template repository is adapted from https://github.com/UtrechtUniversity/simple-python-template. **Click "Use this template"** at the top of this page to create a new repository with the same folder structure, and then add your own files and edit this README for your particular project.
 
 If you plan to develop a package, check the [template repository for a Python package](https://github.com/UtrechtUniversity/re-python-package).
 
@@ -8,7 +8,9 @@ See [here](https://github.com/DenisMot/Python-minimal-install) for a useful guid
 
 ## How to run this code 
 
-#### Clone this repository
+*Update for your specific project paths etc.*
+
+#### Clone this repository 
 
 ```sh
 git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
@@ -21,11 +23,11 @@ cd YOUR-REPO-NAME
 ```
 
 #### Set up virtual environment
-- Create a virtual environment: `python -m venv env`
-- Activate the environment:
+1. Create a virtual environment: `python -m venv env`
+2. Activate the environment:
     - Windows: `.\env\Scripts\activate`
-    - Unix/macOS: `source env/bin/activate`
-- Install required packages: `pip install -r requirements.txt`
+    - Unix/macOS: `source env/bin/activate` 
+3. Install required packages: `pip install -r requirements.txt`
     - If you haven't yet set up this file, you can first install the required packages, then use `pip freeze > requirements.txt` to write all the dependencies (and their versions) to this file. *Note that this can be a bit overkill with the number of dependencies listed: see [here](https://calmcode.io/course/pip-tools/compile) for an improved method.*
 
 #### Execute code
