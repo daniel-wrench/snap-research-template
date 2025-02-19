@@ -6,13 +6,11 @@
 For questions or feedback contact Daniel Wrench: daniel.wrench@vuw.ac.nz
 
 ## TO-DO
--   Tidy this plan of attack: start with "we will" list, then fill out the content below in more detail. **Highlight questions along the way:**
-    - What do you think reproducible research means?
-    - What would be in a well-structured repo?
-    - Is version control only important when working in a team? (No. So you can go back and fix your own mistakes. Also, **when working in multiple environments (give demo)**)
+-   Tidy the task list, **highlighting questions/discussion points along the way:**
     - See [ChatGPT](https://chatgpt.com/share/67b29f0c-d0f8-8012-bceb-633f32dae893) for notes on this
+-   Go through content below
+-   Turn into slides for high-level bullet points, tasks
 -   Refer to Git carpentry to confirm that content
--   Let Alexa know about workshop
 
 
 ### Prerequisites
@@ -35,14 +33,23 @@ Participants should have installed:
 ### Summary of workshop
 
 We will cover 
-- downloading a repository from GitHub
+- what is reproducible research
+- using Git and GitHub 
 - a good code repository structure
-- using version control with Git
 - using virtual environments
+
+What won't we be covering?
+-   Containers
+-   Pull requests and other intermediate/advanced aspects of Git
+-   Object-oriented programming
+-   Testing, `__init__.py` files, and other aspects of creating a piece of "software" (i.e. R/Python library/package)
+-   Instead, **we are focusing on creating a reproducible data pipeline**, as one would encounter in a scientific analysis and would typically (but not necessarily) be limited to step-by-step, functional-style programming. 
 
 #### Task list
 
-1. *What does reproducible research mean to you? 3 elements we will be covering today*
+1. *What does reproducible research mean to you?* 
+2. *Is version control only important when working in a team?*
+2. *3 elements we will be covering today*
 1. Get repo and discuss good structure
     1. Got to GitHub.com and check out my template. *Note structure!* 
     2. Create a template from my repo, **giving your own name**. 
@@ -74,15 +81,6 @@ See here for general principles: https://journals.plos.org/ploscompbiol/article?
 -   Ensures collaboration, longevity, and transparency.
 -   Key pillars: version control, environments, structure.
 -   Demo: A messy vs. well-structured research project.
--   What won't we be covering?
-    -   Containers
-    -   Pull requests and other intermediate/advanced aspects of Git
-    -   Object-oriented programming
-    -   Testing, `__init__.py` files, and other aspects of creating a piece of "software" (i.e. R/Python library/package)
--   Instead, **we are focusing on creating a reproducible data pipeline**, as one would encounter in a scientific analysis and would typically (but not necessarily) be limited to step-by-step, functional-style programming. 
-
-
-
 
 ## PART 2: Structuring a research repository
 

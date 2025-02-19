@@ -37,7 +37,7 @@ python scripts/03_analysis.py
 ```
 
 ## Project Structure
-*Recommended: change based on your specific files. For example, you may also want a `models/` or `notebooks/` folder. (If you are inside `notebooks/` you will likely want to put `sys.path.append(os.path.abspath(".."))` at the start of your notebook, so that you can import funcs from `scripts/`*
+*Recommended: change based on your specific files. For example, you may also want a `src/`, `models/` or `notebooks/` folder. (If you are inside `notebooks/` you will likely want to put `sys.path.append(os.path.abspath(".."))` at the start of your notebook, so that you can import funcs from `scripts/`*
 
 ```
 .
@@ -45,13 +45,17 @@ python scripts/03_analysis.py
 ├── LICENSE            <- License for open-source projects
 │── CITATION.cff       <- Citation file for academic use
 ├── .gitignore         <- Files to ignore (e.g., __pycache__, logs, data)
-├── requirements.txt   <- Dependencies (if using pip)
-├── data               <- Data directory (typically ignored in version control)
+├── requirements.txt   <- Dependencies (if using pip: use environment.yml if using conda)
+├── venv               <- Virtual environment (git ignored)
+├── data/              <- Data directory (typically ignored in version control)
 │   ├── raw/           <- Raw input data (DO NOT MODIFY!)
 │   └── processed/     <- Processed datasets
-├── outputs            <- Outputs like figures, tables, reports
-│   └── figs           <- Plots and figures
-└── scripts            <- Your codes
+├── doc/               <- Written reports, papers, and documentation
+│   ├── project_overview.md
+│   ├── final_paper.pdf
+├── outputs/           <- Outputs like figures, results, model
+│   └── figs/          <- Plots and figures
+└── scripts/           <- Your codes
     ├── utils.py       <- Functions used by multiple scripts
     ├── 01_get_data.py
     ├── 02_clean_data.py
