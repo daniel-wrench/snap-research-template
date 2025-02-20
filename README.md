@@ -5,7 +5,7 @@
 - This simple project structure template repository is adapted from https://github.com/UtrechtUniversity/simple-python-template. 
 - You can find a guide to getting set up with Git, and slides from a workshop on reproducible research, in the `doc/` folder.
 - See [here](https://github.com/DenisMot/Python-minimal-install) for a useful guide to installing a minimal Python environment and setting up in VS Code and conda.
-- For more detail on Git, see [this great free tutorial](https://swcarpentry.github.io/git-novice/): 
+- For more detail on Git, see [this great free tutorial](https://swcarpentry.github.io/git-novice/) 
 - If you plan to develop a package, check out the [template repository for a Python package](https://github.com/UtrechtUniversity/re-python-package).
 
 ## How to run this code 
